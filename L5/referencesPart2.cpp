@@ -1,14 +1,19 @@
 #include <iostream>
 using namespace std;
 
+/* 1. Pass By Value: Does Nothing */
 void add1(int x, int y) {
     x = x + y;
 }
 
+/* 2. Pass By Reference: Changes Values */
 void add2(int &x, int &y) {
     x = x + y;
 }
 
+/* 3. Pass Pointer By Reference: Changes Pointers */
+// (Of course re-assignment of pointers has nothing to do
+//  with addition, it is just here for illustrative purposes)
 void add3(int *&x, int *&y) {
     *x = *x + *y;
     x = y;

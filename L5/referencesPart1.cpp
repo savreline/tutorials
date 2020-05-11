@@ -31,6 +31,7 @@ int main() {
     cout << "Value of s is: " << s << endl;
 
     // References cannot be re-assigned
+    // Current value of y copied into r
     r = y;
     cout << "After r = y" << endl;
     cout << "Value of x is: " << x << endl;
@@ -38,7 +39,7 @@ int main() {
     cout << "Value of r is: " << r << endl;
     cout << "Value of s is: " << s << endl;
 
-    // Change y
+    // Change y, doesn't affect x or r
     y = 100;
     cout << "After y = 100" << endl;
     cout << "Value of x is: " << x << endl;

@@ -13,6 +13,8 @@ void add(int *x, int *y) {
 }
 
 /* 3. Changes Pointers and Values */
+// (Of course re-assignment of pointers has nothing to do
+//  with addition, it is just here for illustrative purposes)
 void add(int **x, int **y) {
     **x = **x + **y;
     *x = *y;
