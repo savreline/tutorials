@@ -39,31 +39,4 @@ class SLinkedList {
     void reverseRecur2();
 };
 
-/**************************/
-/*** Doubly Linked List ***/
-/**************************/
-class DLinkedList {
-    private:
-    struct Node {
-        int val;
-        Node *next;
-        Node *prev;
-        Node(int val) : val(val), next(NULL), prev(NULL) {}
-    };
-    Node *head;
-    Node *tail;
-
-    public:
-    DLinkedList();
-    ~DLinkedList();
-    void insertFront(int val);  
-    void deleteBack();
-    void printForward();
-    void printBackward();
-    bool empty();
-    int size();
-
-    void swap(int x, int y);    
-};
-
 #endif
