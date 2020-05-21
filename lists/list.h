@@ -16,23 +16,21 @@ class SLinkedList {
         Node(int val) : val(val), next(NULL) {}
     };
     Node *head;
-    Node *tail; /* Video 4 */
+    Node *tail; 
 
     public:
     SLinkedList();
     ~SLinkedList();
-    void insertFront(int val);  /* Video 1 */
+    void insertFront(int val);  
     void insertBack(int val);
     void insertAfter(int val, int x);
-    void deleteFront();         /* Video 2 */
+    void deleteFront();       
     void deleteBack();
     void deleteNode(int x);
     void print();
     bool empty();
     int size();
 
-    /* Video 3 (Harder) */
-    /* Video 7 (Recursive) */
     void copyArray(int array[], int size);  
     void copyArrayRecur(int array[], int size, Node *node);
     void reverse();
@@ -58,17 +56,14 @@ class DLinkedList {
     public:
     DLinkedList();
     ~DLinkedList();
-    void insertFront(int val);  /* Video 5 */
+    void insertFront(int val);  
     void deleteBack();
     void printForward();
     void printBackward();
     bool empty();
     int size();
 
-    /* Video 6 (Harder) */
     void swap(int x, int y);    
-
-    /* Video 8: Runtime Analysis */
 };
 
 #endif
