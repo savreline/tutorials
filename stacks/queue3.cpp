@@ -14,8 +14,6 @@ void Queue::push(int x) {
 
 /* Pop */
 int Queue::pop() {
-    int result;
-
     // If there is nothing in s2, then we must transfer elements from s1 over
     if (s2.empty()) {
         while (!s1.empty()) {
@@ -25,7 +23,7 @@ int Queue::pop() {
     }
 
     // If there is something in s2, that is the element that we are looking for
-    result = s2.top();
+    int result = s2.top();
     s2.pop();
     return result;
 }

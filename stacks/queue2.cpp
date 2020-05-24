@@ -1,6 +1,6 @@
 #include "queue.h"
 
-/*** Queue using one stacks: recursive solution ***/
+/*** Queue using one stack: recursive solution ***/
 
 Queue::Queue() {
     s1 = stack<int>();
